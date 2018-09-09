@@ -13,7 +13,6 @@ describe 'Web Reset Password' do
       end
 
     on ResetPasswordPage do |page|
-      puts "Email: #{@email}"
       page.email= @email
       page.reset_my_password
       end
@@ -42,7 +41,6 @@ describe 'Web Reset Password' do
       end
 
       on ResetPasswordPage do |page|
-        puts "Email: #{@email}"
         page.email= @email
         page.reset_my_password
       end

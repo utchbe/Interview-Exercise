@@ -13,7 +13,6 @@ describe 'Web Login' do
               email: @email,
               password: @password
           )
-          puts "For debugging, the username: #{@email} and password: #{@password}"
         end
       end
 
@@ -39,7 +38,6 @@ describe 'Web Login' do
               email: @email,
               password: @password
           )
-          puts "For debugging, the username: #{@email} and password: #{@password}"
         end
       end
 
