@@ -113,3 +113,10 @@ I used mysql database for all the solutions
     left join store_prices on order_lines.product_id = store_prices.product_id and order_lines.store_id =store_prices.store_id
     set line_total = (order_lines.qty * store_prices.price)
     ```
+
+## Extra Credit
+Document docker
+
+docker build -t test-homework .
+
+docker run -e SCREEN="1280x1024x16" -t -i --rm test-homework:latest bash
