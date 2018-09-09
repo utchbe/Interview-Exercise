@@ -11,11 +11,11 @@ require 'json'
 require 'colorize'
 
 
-browser = Watir::Browser.new :chrome, :switches => %w[--ignore-certificate-errors --disable-popup-blocking --disable-translate --disable-notifications --start-maximized --disable-gpu --headless]
+browser = Watir::Browser.new :chrome, :switches => %w[--ignore-certificate-errors --disable-popup-blocking --disable-translate --disable-notifications --start-maximized --disable-gpu --headless --no-sandbox --disable-dev-shm-usage]
 browser.driver.manage.timeouts.implicit_wait = 100 # seconds
 
 
-browser.window.maximize
+#browser.window.maximize
 
 #TODO Add httparty helper methods here or in a class that can be accessed thorughout the framework
 
