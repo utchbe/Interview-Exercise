@@ -126,3 +126,18 @@ I used mysql database for all the solutions
 
 ###### Run docker container and headless automated tests
 `docker run -e SCREEN="1280x1024x16" -t -i --rm test-homework:latest bash`
+
+###### Troubleshooting
+If there are any issues starting the chrome driver in docker, the Docker Daemon file may need to be updated.
+* If on a Mac select Docker Whale -> Preferences
+* Select Daemon and swap to Advanced
+* Add the following in the text box
+ ```
+        {
+           "fixed-cidr-v6" : "2001:db8:1::/64",
+           "debug" : true,
+           "ipv6" : true,
+           "experimental" : true
+         }
+```
+* Apply and Restart
