@@ -55,7 +55,7 @@ describe 'Web Reset Password' do
       on ResetPasswordPage do |page|
         page.alert_element.element.wait_until_present
         expect(page.alert).to include('Check your email for password reset instructions')
-        expect(page.current_url).to eq('https://app.shipt.com')
+        expect(page.current_url).to eq('https://app.shipt.com/')
 
       end
     end
