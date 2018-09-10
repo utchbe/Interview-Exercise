@@ -30,5 +30,3 @@ RUN git clone https://github.com/utchbe/Interview-Exercise.git \
 
 ADD docker-entrypoint.sh /
 ENTRYPOINT ["/docker-entrypoint.sh"]
-
-CMD "cd Interview-Exercise/test_automation && rspec"
