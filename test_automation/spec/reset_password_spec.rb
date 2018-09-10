@@ -47,13 +47,16 @@ describe 'Web Reset Password' do
     end
 
     puts "------------------------------------------------------------------".yellow
-    puts "I've currently disabled Web Reset Password, as it is failing.... It should be fixed before re-enabling. Should also consider changing the logic to not notify the user that they will have to wait 5 minutes before they requst a new password.".red
+    puts "This is a flaky test, the current page logic only lets a user reset their password every 5 minutes. Two decent options to make this test better would be:".red
+    puts "1. Create a bank of 100 valid test users that could be randomly picked from to test against".red
+    puts "2. (My preference) Create a database or api method that would modify the datastore to remove or reset the data that prevents the password from being reset within 5 minutes".red
     puts "------------------------------------------------------------------".yellow
-    xit 'should provide a success message' do
+    it 'should provide a success message' do
       on ResetPasswordPage do |page|
         page.alert_element.element.wait_until_present
-        expect(page.current_url).to eq('https://app.shipt.com/password_resets')
         expect(page.alert).to include('Check your email for password reset instructions')
+        expect(page.current_url).to eq('https://app.shipt.com')
+
       end
     end
   end
