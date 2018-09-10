@@ -65,7 +65,7 @@ While this is good that the user is getting feedback. It does open up the system
 
 ## UI & API Automation
 I've combined the UI and API Automation frameworks into 1 repo. These could easily be split up but I decided to re-use the framework for this exercise.
-[UI & API Automation Repo](https://github.com/utchbe/THREE-LITTLE-PIGS/tree/master/test_automation)
+[UI & API Automation Repo](https://github.com/utchbe/Interview-Exercise/tree/master/test_automation)
 
 ## SQL
 
