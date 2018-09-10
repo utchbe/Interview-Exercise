@@ -23,6 +23,7 @@ RUN wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/$CH
 RUN git clone https://github.com/utchbe/Interview-Exercise.git \
     && cd Interview-Exercise \
     && git checkout beta \
+    && git pull \
     && cd test_automation \
     && bundle install
 
