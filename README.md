@@ -116,6 +116,8 @@ I used mysql database for all the solutions
 
 ## Extra Credit
 
+I decided to go a step further and include instructions on building a docker container for running the test suite in headless mode easily. The current `master` branch in git doesn't include the docker file or necessary changes to the spec_helper needed to run chrome in headless mode. Be sure to follow the steps below!
+
 ###### Git Clone Repo
 
 `git clone https://github.com/utchbe/Interview-Exercise.git`
