@@ -64,8 +64,10 @@ While this is good that the user is getting feedback. It does open up the system
 > I would first check for javascript errors on the page, then onto check the actual values in the database. If I didn't find what I was looking for I would check for any web application logs or any api error queues (especially if asynchronous). If I didn't find what I am looking for there, I would attempt to profile the database that is being used to see if anything is attempting to be written there. If all that fails, I would go loop a developer into the issue, with clear steps to reproduce for more ideas or debugging in a developer environment. My suggestion would be to have the same message and page displayed for all three scenarios while keeping the current server side rules in place (not sending more than 1 pw reset email within 5 minutes)
 
 ## UI & API Automation
-I've combined the UI and API Automation frameworks into 1 repo. These could easily be split up but I decided to re-use the framework for this exercise.
-[UI & API Automation Repo](https://github.com/utchbe/THREE-LITTLE-PIGS/tree/master/test_automation)
+I've combined the UI and API Automation frameworks into 1 repo that can be found at the url below (test_automation folder of this repo). These could easily be split up but I decided to re-use the framework for this exercise.
+[UI & API Automation Repo](https://github.com/utchbe/Interview-Exercise/tree/master/test_automation)
+
+> Spoilers: I've also included a dockerfile (see [Extra Credit](https://github.com/utchbe/Interview-Exercise#extra-credit) for details)
 
 ## SQL
 
