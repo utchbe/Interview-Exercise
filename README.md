@@ -115,8 +115,14 @@ I used mysql database for all the solutions
     ```
 
 ## Extra Credit
-Document docker
 
-docker build -t test-homework .
+###### Checkout beta branch
 
-docker run -e SCREEN="1280x1024x16" -t -i --rm test-homework:latest bash
+`git checkout beta` or see branch on [github](https://github.com/utchbe/Interview-Exercise/tree/beta)
+
+###### Build docker container from dockerfile
+
+    `docker build -t test-homework .`
+
+###### Run docker container and headless automated tests
+`docker run -e SCREEN="1280x1024x16" -t -i --rm test-homework:latest bash`
