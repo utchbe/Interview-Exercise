@@ -65,7 +65,7 @@ While this is good that the user is getting feedback. It does open up the system
 
 ## UI & API Automation
 I've combined the UI and API Automation frameworks into 1 repo. These could easily be split up but I decided to re-use the framework for this exercise.
-[UI & API Automation Repo](https://github.com/utchbe/Interview-Exercise/tree/master/test_automation)
+[UI & API Automation Repo](https://github.com/utchbe/THREE-LITTLE-PIGS/tree/master/test_automation)
 
 ## SQL
 
@@ -115,6 +115,8 @@ I used mysql database for all the solutions
     ```
 
 ## Extra Credit
+
+I decided to go a step further and include instructions on building a docker container for running the test suite in headless mode easily. The current `master` branch in git doesn't include the docker file or necessary changes to the spec_helper needed to run chrome in headless mode. Be sure to follow the steps below!
 
 ###### Git Clone Repo
 
