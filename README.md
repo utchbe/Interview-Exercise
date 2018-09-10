@@ -116,6 +116,10 @@ I used mysql database for all the solutions
 
 ## Extra Credit
 
+###### Git Clone Repo
+
+`git clone https://github.com/utchbe/Interview-Exercise.git`
+
 ###### Checkout beta branch
 
 `git checkout beta` or see branch on [github](https://github.com/utchbe/Interview-Exercise/tree/beta)
