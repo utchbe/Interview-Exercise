@@ -77,7 +77,7 @@ I used mysql database for all the solutions
 
     Answer: Gettar
     ```sql
-    select * from stores where allowed_alcohol = 1`
+    select * from stores where allowed_alcohol = 1
     ```
 1. Product name of the 2 most expensive items based on their price at store id 1
 
@@ -85,7 +85,7 @@ I used mysql database for all the solutions
     ```sql
     select products.name from store_prices
     inner join products on store_prices.product_id = products.id
-    where store_id = 1 order by price desc limit 2`
+    where store_id = 1 order by price desc limit 2
     ```
 
 1. List the products that are not sold in the store id 2
